@@ -1,0 +1,33 @@
+{
+  "app_name": "SimpleCounter",
+  "navigation_type": "stack",
+  "theme_colors": {
+    "primary": "#2196F3",
+    "secondary": "#FFC107"
+  },
+  "pages": [
+    {
+      "id": "counter",
+      "component_name": "CounterPage",
+      "title": "Counter",
+      "description": "Main counter with increment/decrement buttons and reset",
+      "type": "core"
+    },
+    {
+      "id": "history",
+      "component_name": "HistoryPage",
+      "title": "History",
+      "description": "View counter history and previous sessions",
+      "type": "placeholder",
+      "suggested_prompt": "Add history page to track counter changes over time"
+    },
+    {
+      "id": "settings",
+      "component_name": "SettingsPage",
+      "title": "Settings",
+      "description": "Counter settings like step size and themes",
+      "type": "placeholder",
+      "suggested_prompt": "Add settings for custom increment values and color themes"
+    }
+  ]
+}
