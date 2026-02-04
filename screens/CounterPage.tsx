@@ -133,7 +133,7 @@ export default function CounterPage() {
     <View style={styles.container}>
       {/* Header */}
       <View style={styles.header}>
-        <Text style={styles.headerTitle}>Simple Counter</Text>
+        <Text style={styles.headerTitle}>Simple Counter 2</Text>
         <Text style={styles.headerSubtitle}>Track your counts with style</Text>
       </View>
 
