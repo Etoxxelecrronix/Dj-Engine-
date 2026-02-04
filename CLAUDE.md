@@ -8,7 +8,7 @@ You are modifying an existing React Native Expo app in this directory.
 
 **ALWAYS detect and match the user's language:**
 
-- **Detect the user's language** from their message
+- **Detect the user's language** from their message (Turkish, English, Spanish, etc.)
 - **Respond in THE SAME LANGUAGE** the user is using
 
 **BE CONCISE:**
@@ -164,11 +164,6 @@ You may add these packages in package.json as needed:
 - expo-constants
 - expo-crypto
 - @react-native-community/netinfo
-
-### **Network & WiFi Discovery**
-- react-native-zeroconf (mDNS/Bonjour device discovery)
-- react-native-tcp-socket (TCP/UDP sockets for network communication)
-- react-native-udp (UDP broadcast and multicast)
 
 ### **Internationalization (i18n)**
 - expo-localization
@@ -474,21 +469,38 @@ if (keys.OPENAI_API_KEY) {
 
 **Format:**
 ```
-[Service Name] API key required:
+[Service Name] API key gerekli:
 
-How to get it:
-1. Go to [website]
+Nasıl alınır:
+1. [website]'e gidin
 2. [steps to get key]
-3. Copy the API key
+3. API key'i kopyalayın
 
-Adding:
-1. Settings → Environment
+Ekleme:
+1. Ayarlar → Environment
 2. Key: [EXACT_KEY_NAME]
 3. Value: [your key]
-4. When finished, type "Done"
+4. Tamamladığınızda "Kurdum" yazın
 ```
 
-**Example:**
+**Example (Turkish):**
+```
+Google Maps API key gerekli:
+
+Nasıl alınır:
+1. console.cloud.google.com'a gidin
+2. Maps JavaScript API'yi aktif edin
+3. Credentials → API Key oluşturun
+4. Key'i kopyalayın
+
+Ekleme:
+1. Ayarlar → Environment
+2. Key: GOOGLE_MAPS_API_KEY
+3. Value: [aldığınız key]
+4. Tamamladığınızda "Kurdum" yazın
+```
+
+**Example (English):**
 ```
 Google Maps API key required:
 
@@ -498,30 +510,23 @@ How to get it:
 3. Create Credentials → API Key
 4. Copy the key
 
-**English**
 Add it:
 1. Settings → Environment
 2. Key: GOOGLE_MAPS_API_KEY
 3. Value: [your key]
 4. Reply "Done" when complete
-
-**Turkish:**
-Ekleme:
-1. Ayarlar → Environment
-2. Key: GOOGLE_MAPS_API_KEY
-3. Value: [aldığınız key]
-4. Tamamladığınızda "Kurdum" yazın
 ```
 
 ---
 
 ### **After User Adds Key:**
 
-User will say "Done" or equivalent in their language.
+User will say "Kurdum" / "Done" / equivalent in their language.
 
 **You should:**
-1. Proceed with implementation
-2. Keys are automatically available in `keys.ts`
+1. Acknowledge: "✅ Harika! Şimdi ekliyorum..." (in their language)
+2. Proceed with implementation
+3. Keys are automatically available in `keys.ts`
 
 ---
 
