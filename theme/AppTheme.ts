@@ -1,17 +1,17 @@
 // This file contains ONLY theme definitions - no imports, no logic
 
-export const LightTheme = {
+export const DarkTheme = {
   colors: {
-    // SimpleCounter App - Modern Blue & Amber theme
-    primary: '#2196F3',      // Material Blue
-    secondary: '#FFC107',    // Amber
-    background: '#F5F7FA',   // Light gray-blue background
-    surface: '#FFFFFF',      // White cards/surfaces
-    text: '#1A1A1A',         // Almost black text
-    textSecondary: '#6B7280', // Gray text
+    // SimpleCounter App - Modern Dark theme
+    primary: '#64B5F6',      // Light Blue
+    secondary: '#FFD54F',    // Light Amber
+    background: '#121212',   // Dark background
+    surface: '#1E1E1E',      // Dark cards/surfaces
+    text: '#FFFFFF',         // White text
+    textSecondary: '#9CA3AF', // Light gray text
     success: '#10B981',      // Green
     error: '#EF4444',        // Red
-    border: '#E5E7EB',       // Light gray border
+    border: '#2C2C2C',       // Dark gray border
 
     // Modern gradient presets for premium look
     gradient: {
@@ -135,4 +135,6 @@ export const LightTheme = {
   },
 };
 
-export const AppTheme = LightTheme;
+export const LightTheme = DarkTheme;
+
+export const AppTheme = DarkTheme;
