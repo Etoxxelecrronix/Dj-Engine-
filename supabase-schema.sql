@@ -2,7 +2,7 @@
 -- SUPABASE DATABASE SCHEMA DOCUMENTATION
 -- ============================================
 -- Project: ylsapyykgumlaiomrplm
--- Generated: 2026-02-04T19:11:19.622Z
+-- Generated: 2026-02-04T19:35:33.965Z
 -- 
 -- ⚠️  IMPORTANT: This is DOCUMENTATION of existing schema
 -- These tables ALREADY EXIST in the database
